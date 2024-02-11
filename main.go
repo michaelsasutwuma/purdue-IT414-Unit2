@@ -1,9 +1,8 @@
-def add_numbers(num1, num2):
-    return num1 + num2
+package main
 
-def main():
-    result = add_numbers(3, 5)
-    print(f"The result is {result}")
+import "fmt"
 
-if __name__ == "__main__":
-    main()
+func main() {
+    result := adder(1, 2)
+    fmt.Printf("\nResult: %d\n", result)
+}
