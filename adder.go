@@ -1,10 +1,5 @@
-def add_numbers(num1, num2):
-    return num1 + num2
+package main
 
-def main():
-    result = add_numbers(3, 5)
-    print(f"The result is {result}")
-
-if __name__ == "__main__":
-    main()
-
+func adder(first int64, second int64) int64 {
+    return first + second
+}
