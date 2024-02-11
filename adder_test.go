@@ -1,8 +1,12 @@
-import unittest
+run package tests | run file tests
+package main
 
-class TestAddNumbers(unittest.TestCase):
-    def test_add_numbers(self):
-        self.assertEqual(add_numbers(3, 5), 8)
+import "testing"
 
-if __name__ == "__main__":
-    unittest.main()
+run test|debug test
+func TestAdder(t *testing.T) {
+    result := adder(1, 2)
+    if result != 3 {
+        t.Errorf("Expected %d but got %d", 3, result)
+    }
+}
